@@ -1,0 +1,140 @@
+.diary-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f0f4f8 ;
+}
+#diary-entry{
+    width: 100%;
+    max-width: 800px;
+    height: 70vh;
+    font-family: Kalam;
+    font-size: 20px;
+    line-height: 40px;
+    color:#000;
+   background-color: #ffffff;
+background-image: linear-gradient(to right,transparent 59px ,#ffbaba 61px),
+repeating-linear-gradient(to bottom,transparent,transparent 39px,#d4eaff 40px);
+background-attachment: local;
+border:1px solid #ccc;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+outline:none;
+resize: none;
+}
+.diary-tool{
+/* width: 200px; */
+width: 100%;
+max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0 ;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    /* width: 100%; */
+    box-sizing: border-box;
+}
+.diary-tool button{
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.diary-tool button:hover{
+    transform: scale(1.2);
+}
+.color-pick{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.color-pick label{
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.color-pick label:hover{
+    transform: scale(1.2);
+}
+#color-picker{
+    position: absolute;
+    opacity: 0;
+    width: 30px;
+height: 30px;
+cursor: pointer;
+}
+emoji-picker{
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:100%;
+    z-index:100;
+    /* display: none; */
+}
+emoji-picker.show{
+    display: block;
+}
+
+.lock-screen{
+    text-align:center;
+    margin-top: 100px;
+ padding: 30px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 100px auto;
+  background: #f9f9f9;
+}
+
+.lock-screen button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.diary-images {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.diary-img {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.diary-img-container {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+}
+
+.diary-img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 8px;
+}
+
+.remove-img-btn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2px 6px;
+  font-size: 14px;
+}

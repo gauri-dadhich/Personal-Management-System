@@ -1,0 +1,68 @@
+.lock-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.lock-screen h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.lock-screen > div,
+.lock-screen > button {
+    z-index: 2;
+}
+
+/* Glassmorphic container */
+.lock-screen > *:not(h2) {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 12px 24px;
+    margin: 8px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.lock-screen button {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lock-screen button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.lock-screen button:active {
+    transform: scale(0.97);
+}
+
+/* Error message with shake */
+.lock-screen p {
+    font-weight: bold;
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+}
