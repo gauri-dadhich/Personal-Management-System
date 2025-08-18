@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../Context/Auth";
 // import MainPage from "../Main/Main";
-import LoginPage from "../Login";
+// import LoginPage from "../Login";
 import './Signup.css';
 const Signup=()=>{
     const auth=useAuth();

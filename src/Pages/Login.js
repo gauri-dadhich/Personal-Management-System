@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/Auth";
 import './Login.css';
-import MainPage from "./Main/Main";
+// import MainPage from "./Main/Main";
 
 const LoginPage = () => {
     const [email, setEmail] = useState("");

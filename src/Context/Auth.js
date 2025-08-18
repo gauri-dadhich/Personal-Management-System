@@ -1,5 +1,5 @@
 import React,{useState,createContext,useContext} from "react";
-import { BrowserRouter,Routes,Route,Link,useNavigate,Navigate } from "react-router-dom";
+// import { BrowserRouter,Routes,Route,Link,useNavigate,Navigate } from "react-router-dom";
 const Authcontext=createContext(null);
 export const AuthProvider=({children})=>{
     const [isloggedin,setloggedin]=useState(false);

@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import Home from './Pages/Home/Home';
 import { useAuth } from './Context/Auth';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import MainPage from './Pages/Main/Main';
 import LoginPage from './Pages/Login';
 import Signup from './Pages/Sign/Signip';
@@ -17,16 +17,16 @@ function App() {
   return (
     
     
-   <Routes>
-    <Route path='/' element={<Home />} />
-    <Route path='/login' element={<LoginPage />} />
-    <Route path='/main' element={isloggedin ? <MainPage /> : <LoginPage />} />
-    <Route path='/Signip' element={<Signup />} />
-    <Route path='/Main' element={<MainPage />} />
+  <Routes>
+   <Route path='/' element={<Home />} />
+   <Route path='/login' element={<LoginPage />} />
+   <Route path='/main' element={isloggedin ? <MainPage /> : <LoginPage />} />
+   <Route path='/Signip' element={<Signup />} />
+   <Route path='/Main' element={<MainPage />} />
    <Route path='/Diary' element={<Diary/>}/>
-    <Route path='/Calendar' element={<Calendar/>}/>
-    <Route path='/Fuel' element={<Fuel/>}/>
-   </Routes>
+   <Route path='/Calendar' element={<Calendar/>}/>
+   <Route path='/Fuel' element={<Fuel/>}/>
+  </Routes>
   
   
     
