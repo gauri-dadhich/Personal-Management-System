@@ -1,0 +1,262 @@
+/* AI Assistant Button - Floating and Visible */
+.ai-assistant-button {
+  position: fixed !important;
+  z-index: 9999 !important;
+  cursor: move;
+  transition: all 0.3s ease;
+  pointer-events: auto !important;
+}
+
+.ai-assistant-button:hover {
+  transform: scale(1.05);
+}
+
+/* AI Assistant Toggle Button */
+.ai-assistant-toggle-btn {
+  width: 60px !important;
+  height: 60px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none !important;
+  border-radius: 50% !important;
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4) !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  z-index: 10000 !important;
+}
+
+.ai-assistant-toggle-btn:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%) !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.6) !important;
+}
+
+.ai-assistant-toggle-btn:active {
+  transform: scale(0.95) !important;
+}
+
+/* AI Assistant Chat Interface */
+.ai-assistant-chat {
+  position: fixed !important;
+  z-index: 10000 !important;
+  transition: all 0.3s ease !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(10px) !important;
+  max-width: calc(100vw - 40px) !important;
+  max-height: calc(100vh - 40px) !important;
+}
+
+/* AI Assistant Header */
+.ai-assistant-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  padding: 16px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-radius: 16px 16px 0 0 !important;
+  min-height: 64px !important;
+}
+
+.ai-assistant-header-left {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+.ai-assistant-title {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  color: white !important;
+  white-space: nowrap !important;
+}
+
+.ai-assistant-page-indicator {
+  font-size: 12px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  padding: 4px 8px !important;
+  border-radius: 12px !important;
+  backdrop-filter: blur(10px) !important;
+  white-space: nowrap !important;
+}
+
+.ai-assistant-limited-mode {
+  font-size: 11px !important;
+  color: #fbbf24 !important;
+  background: rgba(251, 191, 36, 0.2) !important;
+  padding: 4px 8px !important;
+  border-radius: 12px !important;
+  backdrop-filter: blur(10px) !important;
+  white-space: nowrap !important;
+}
+
+.ai-assistant-header-right {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-shrink: 0 !important;
+}
+
+/* AI Assistant Control Buttons */
+.ai-assistant-control-btn {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: none !important;
+  color: white !important;
+  padding: 8px !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  flex-shrink: 0 !important;
+}
+
+.ai-assistant-control-btn:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  transform: scale(1.1) !important;
+}
+
+.ai-assistant-control-btn:active {
+  transform: scale(0.95) !important;
+}
+
+/* AI Assistant Chat Content */
+.ai-assistant-chat-content {
+  background: white !important;
+  height: calc(100% - 64px) !important;
+  border-radius: 0 0 16px 16px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+/* Copilot Chat Styling */
+.ai-assistant-copilot-chat {
+  height: 100% !important;
+  border-radius: 0 0 16px 16px !important;
+  width: 100% !important;
+}
+
+/* Ensure the AI Assistant is always visible and above other elements */
+.ai-assistant-button,
+.ai-assistant-chat {
+  position: fixed !important;
+  z-index: 9999 !important;
+  pointer-events: auto !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ai-assistant-chat {
+    width: calc(100vw - 40px) !important;
+    max-width: 400px !important;
+    left: 20px !important;
+    right: 20px !important;
+  }
+  
+  .ai-assistant-button {
+    right: 20px !important;
+    bottom: 20px !important;
+  }
+  
+  .ai-assistant-header-left {
+    gap: 8px !important;
+  }
+  
+  .ai-assistant-page-indicator,
+  .ai-assistant-limited-mode {
+    font-size: 10px !important;
+    padding: 2px 6px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .ai-assistant-chat {
+    width: calc(100vw - 20px) !important;
+    left: 10px !important;
+    right: 10px !important;
+  }
+  
+  .ai-assistant-header {
+    padding: 12px 16px !important;
+  }
+  
+  .ai-assistant-title {
+    font-size: 14px !important;
+  }
+}
+
+/* Animation for chat opening */
+.ai-assistant-chat {
+  animation: slideIn 0.3s ease-out !important;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Ensure proper layering above all content */
+.ai-assistant-button,
+.ai-assistant-chat {
+  z-index: 99999 !important;
+}
+
+/* Hover effects for better interactivity */
+.ai-assistant-toggle-btn:hover::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.3;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+}
+
+/* Prevent chat from going off-screen */
+.ai-assistant-chat {
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+/* Ensure chat content fits properly */
+.ai-assistant-chat-content {
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}

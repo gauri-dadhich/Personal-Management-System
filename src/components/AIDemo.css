@@ -1,0 +1,70 @@
+/* AI Demo Component Styles */
+.ai-demo {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ai-demo h2 {
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ai-demo .grid > div {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ai-demo .grid > div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ai-demo ul li {
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.ai-demo ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ai-demo {
+    padding: 1rem;
+  }
+  
+  .ai-demo .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ai-demo h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Animation for cards */
+.ai-demo .grid > div {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.ai-demo .grid > div:nth-child(1) { animation-delay: 0.1s; }
+.ai-demo .grid > div:nth-child(2) { animation-delay: 0.2s; }
+.ai-demo .grid > div:nth-child(3) { animation-delay: 0.3s; }
+.ai-demo .grid > div:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
