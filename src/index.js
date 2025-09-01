@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './Context/Auth';
+import { CopilotKit } from "@copilotkit/react-core";
+
 // import { useAuth } from './Context/Auth';
 
 import RootLayout from './Pages/Root';
@@ -13,7 +15,8 @@ const root=ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <React.StrictMode>  
-    
+     <CopilotKit publicApiKey="ck_pub_f2f7cac57eff497b7940dccdb6eef337">
+
       <BrowserRouter>
       <RootLayout>
 
@@ -22,6 +25,7 @@ root.render(
     </AuthProvider>
       </RootLayout>
     </BrowserRouter>
+     </CopilotKit>
   </React.StrictMode>
   );
 

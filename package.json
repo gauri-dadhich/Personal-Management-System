@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@copilotkit/react-core": "^1.10.2",
+    "@copilotkit/react-textarea": "^1.10.2",
     "@copilotkit/react-ui": "^1.10.2",
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
     "@fortawesome/free-solid-svg-icons": "^7.0.0",

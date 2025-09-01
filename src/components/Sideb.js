@@ -107,6 +107,7 @@ function Sidebar() {
                         <li><NavLink to='/Diary' onClick={handleNavClick}>Diary</NavLink></li>
                         <li><NavLink to='/Calendar' onClick={handleNavClick}>Calendar</NavLink></li>
                         <li><NavLink to='/Fuel' onClick={handleNavClick}>Fuel-Up</NavLink></li>
+                        <li><NavLink to='/Notes' onClick={handleNavClick}>Notes</NavLink></li>
                     </nav>
                 </ul>
             </div>
