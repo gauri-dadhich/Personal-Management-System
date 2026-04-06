@@ -22,7 +22,7 @@ function App() {
   console.log('📍 Current route:', window.location.pathname);
   
   return (
-    <CopilotKit publicApiKey="process.env.REACT_APP_COPILOT_KEY">
+    <CopilotKit publicApiKey={process.env.REACT_APP_COPILOT_KEY}>
       <AppContextProvider>
         <div className="app-container">
           <Routes>
