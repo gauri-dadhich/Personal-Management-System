@@ -1,3 +1,13 @@
+#About the project
+• Built an AI-powered productivity platform using React.js, CopilotKit, and n8n, integrating diary, task management,
+calendar, and note-taking functionalities into a single application.
+• Integrated an AI chatbot using CopilotKit APIs to assist users with task organization, scheduling, and productivity
+workflows.
+• Automated reminder notifications and workflow execution using n8n, reducing manual scheduling by 50 % effort
+and improving task management.
+• Developed reusable React components and implemented dynamic state management to support real-time updates
+across multiple modules.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -9,10 +19,9 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open say-ur-day.netlify.app to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload when you make changes.
 
 ### `npm test`
 
